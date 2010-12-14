@@ -1,0 +1,12 @@
+<% title "Evaluation" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @evaluation.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_evaluation_path(@evaluation) %> |
+  <%= link_to "Destroy", @evaluation, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", evaluations_path %>
+</p>

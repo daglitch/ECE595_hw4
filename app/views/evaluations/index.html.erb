@@ -1,0 +1,17 @@
+<% title "Evaluations" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for evaluation in @evaluations %>
+    <tr>
+      <td><%= evaluation.name %></td>
+      <td><%= link_to "Show", evaluation %></td>
+      <td><%= link_to "Edit", edit_evaluation_path(evaluation) %></td>
+      <td><%= link_to "Destroy", evaluation, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Evaluation", new_evaluation_path %></p>
