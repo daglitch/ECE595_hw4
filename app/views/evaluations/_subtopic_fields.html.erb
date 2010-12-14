@@ -1,6 +1,6 @@
-<p>
+<p class="fields">
   <%= f.label :content, "subtopic"%>
   <%= f.text_field :content%>
-  <%= f.check_box :_destroy %>
-  <%= f.label :_destroy, "Remove subtopic" %>
+  <%= f.hidden_field :_destroy %>
+  <%= link_to_function "remove", "remove_fields(this)" %>
 </p>
