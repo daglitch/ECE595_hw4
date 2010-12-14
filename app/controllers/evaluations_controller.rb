@@ -9,7 +9,10 @@ class EvaluationsController < ApplicationController
   
   def new
     @evaluation = Evaluation.new
-    3.times {@evaluation.topics.build}
+    3.times do
+      topic = @evaluation.topics.build
+      4.times { topic.subtopics.build }
+    end
   end
   
   def create

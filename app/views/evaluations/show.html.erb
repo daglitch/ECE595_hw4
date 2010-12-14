@@ -8,6 +8,11 @@
 <ol>
   <% for topic in @evaluation.topics %>
   <li><%=h topic.content %></li>
+    <ul>
+      <% for subtopic in topic.subtopics %>
+        <li><%=h subtopic.content %></li>
+      <% end %>
+    </ul>
   <% end %>
   
 </ol>
