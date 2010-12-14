@@ -7,7 +7,9 @@
     <% f.fields_for :topics do |builder|%>
     <p>
       <%= builder.label :content, "Topic"%><br />
-      <%= builder.text_area :content, :rows => 3%>
+      <%= builder.text_area :content, :rows => 3%><br />
+      <%= builder.check_box :_destroy %>
+      <%= builder.label :_destroy, "Remove Topic" %>
     </p>
     <% end %>
   <p><%= f.submit %></p>
