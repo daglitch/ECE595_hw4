@@ -9,6 +9,7 @@ class EvaluationsController < ApplicationController
   
   def new
     @evaluation = Evaluation.new
+    @evaluation.topics.build
   end
   
   def create

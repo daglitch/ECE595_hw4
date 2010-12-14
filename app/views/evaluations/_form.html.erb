@@ -4,5 +4,11 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
+    <% f.fields_for :topics do |builder|%>
+    <p>
+      <%= builder.label :content, "Topic"%><br />
+      <%= builder.text_area :content, :rows => 3%>
+    </p>
+    <% end %>
   <p><%= f.submit %></p>
 <% end %>
