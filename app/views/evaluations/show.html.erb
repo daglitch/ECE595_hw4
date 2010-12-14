@@ -5,6 +5,13 @@
   <%= @evaluation.name %>
 </p>
 
+<ol>
+  <% for topic in @evaluation.topics %>
+  <li><%=h topic.content %></li>
+  <% end %>
+  
+</ol>
+
 <p>
   <%= link_to "Edit", edit_evaluation_path(@evaluation) %> |
   <%= link_to "Destroy", @evaluation, :confirm => 'Are you sure?', :method => :delete %> |
