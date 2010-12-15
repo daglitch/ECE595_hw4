@@ -10,10 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101214084652) do
+ActiveRecord::Schema.define(:version => 20101215164809) do
 
   create_table "evaluations", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ratings", :force => true do |t|
+    t.integer  "subtopic_id"
+    t.text     "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

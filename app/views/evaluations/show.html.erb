@@ -11,6 +11,9 @@
     <ul>
       <% for subtopic in topic.subtopics %>
         <li><%=h subtopic.content %></li>
+             <% for rating in subtopic.ratings %>
+            <li><%=h rating.content %></li>
+            <% end %>
       <% end %>
     </ul>
   <% end %>
