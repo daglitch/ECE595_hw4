@@ -1,6 +1,18 @@
 <p class="fields">
-  Rating:<br />
-  <%= f.label :comments, "comments" %><br />
+
+
+    <div class="ratingbox">
+    <span class="rateit">Ratiiing:</span><br />
+    <a href="rate/10/1" id="rate_1" class="rspan" ></a>
+    <a href="rate/10/2" id="rate_2" class="rspan" ></a>
+    <a href="rate/10/3" id="rate_3" class="rspan" ></a>
+    <a href="rate/10/4" id="rate_4" class="rspan" ></a>
+    <a href="rate/10/5" id="rate_5" class="rspan" ></a>
+    </div><br /><br />
+
+  
+
+  <%= f.label :comments, "Comments" %><br />
   <%= f.text_area :comments, :rows => 2%>
   <%= link_to_remove_fields "remove", f %>
 </p>

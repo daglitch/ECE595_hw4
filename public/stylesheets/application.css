@@ -73,3 +73,27 @@ a {
 .error_messages ul {
   margin: 0;
 }
+
+.ratingbox {
+
+  position:relative;
+  margin-top:10px;
+  height:20px;
+  width:400px;
+}
+.rspan {
+  display:block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-indent: -999em;
+  cursor: pointer;
+  background: url(../images/star_rating.gif) no-repeat 0 0px;
+}
+.active {
+  background-position: 0 -16px;
+}
+.ratingbox a:hover {
+  background-position: 0 -32px;
+}
