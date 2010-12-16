@@ -5,7 +5,7 @@
     <%= f.text_area :content, :rows => 3%>
   </p>
   
-  <% f.fields_for :subtopics do |builder| %>
+  <%= f.fields_for :subtopics do |builder| %>
     <%= render 'subtopic_fields', :f => builder%>
   <% end %>
   <p><%= link_to_add_fields "Add Subtopic", f, :subtopics %></p>

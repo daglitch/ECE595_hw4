@@ -4,7 +4,7 @@
   <%= f.text_field :content %>
   <%= link_to_remove_fields "remove", f %>
 </p>
-<% f.fields_for :ratings do |builder| %>
+<%= f.fields_for :ratings do |builder| %>
   <%= render 'rating_fields', :f => builder%>
 <% end %>
   <p><%= link_to_add_fields "Add Rating/Comments", f, :ratings %></p>
